@@ -31,7 +31,14 @@ def UpdateString(input_str, input_str2, index):
     # Print input_str with input_str2 repaced at given index
     PrintOutput(input_str[:index] + input_str2 + input_str[index+1:])
 
+################################################
+########   Function 4 : FindWordCount  #########
+################################################
 
+    
+def FindWordCount(input_list, input_str):
+    # Return Num occurances of input_str in input_list
+    return len([x for x in input_list if x == input_str])
 
 ################################################
 ############     Function Tests    #############
@@ -46,6 +53,11 @@ print("OUTPUT", LoadFile("test.txt"))
 
 print("\nTesting UpdateString ...")
 UpdateString("Hello World", "a", 3)
+
+print("\nTesting FindWordCount ...")
+a = ["Alice"]*5
+print(*a)
+PrintOutput(str(FindWordCount(a, "Alice")))
 
 
 
