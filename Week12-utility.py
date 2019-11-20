@@ -41,7 +41,7 @@ def FindWordCount(input_list, input_str):
     return len([x for x in input_list if x == input_str])
 
 ################################################
-########   Function 5 : ScoreFinder  #########
+########   Function 5 : ScoreFinder    #########
 ################################################
 
     
@@ -57,6 +57,15 @@ def ScoreFinder(players, scores, name):
     except:
         # Print not found if name does not exist
         PrintOutput("player not found")
+
+################################################
+########   Function 6 : Union          #########
+################################################
+
+def Union(input_list, input_list2):
+    # Return union of input lists
+    return list({x for x in input_list + input_list2})
+    
 
 ################################################
 ############     Function Tests    #############
@@ -82,6 +91,10 @@ players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
 scores = [5, 8, 10, 6, 10, 4]
 ScoreFinder(players, scores, "jill")
 ScoreFinder(players, scores, "Manuel")
+
+print("\nTesting Union ...")
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+print("OUTPUT", Union(scores, players2))
 
 
 
