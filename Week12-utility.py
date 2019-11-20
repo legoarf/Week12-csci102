@@ -12,6 +12,17 @@
 def PrintOutput(input_str):
     print("OUTPUT {}".format(input_str))
 
+################################################
+########   Function 2 : LoadFile       #########
+################################################
+
+
+def LoadFile(input_file):
+    # Open the file
+    with open(input_file, 'r') as fin:
+        # Return list of lines without newline character
+        return [line[:-1] for line in fin]
+
 
 ################################################
 ############     Function Tests    #############
@@ -20,3 +31,6 @@ def PrintOutput(input_str):
 
 print("Testing PrintOutput ...")
 PrintOutput("This is a test string")
+
+print("\nTesting LoadFile ...")
+print(LoadFile('test.txt'))
