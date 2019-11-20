@@ -23,6 +23,15 @@ def LoadFile(input_file):
         # Return list of lines without newline character
         return [line[:-1] for line in fin]
 
+################################################
+########   Function 3 : UpdateString   #########
+################################################
+
+def UpdateString(input_str, input_str2, index):
+    # Print input_str with input_str2 repaced at given index
+    PrintOutput(input_str[:index] + input_str2 + input_str[index+1:])
+
+
 
 ################################################
 ############     Function Tests    #############
@@ -33,4 +42,14 @@ print("Testing PrintOutput ...")
 PrintOutput("This is a test string")
 
 print("\nTesting LoadFile ...")
-print(LoadFile('test.txt'))
+print("OUTPUT", LoadFile("test.txt"))
+
+print("\nTesting UpdateString ...")
+UpdateString("Hello World", "a", 3)
+
+
+
+
+
+
+
