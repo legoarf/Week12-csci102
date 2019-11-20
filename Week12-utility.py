@@ -90,35 +90,35 @@ def NotIn(input_list, input_list2):
 ################################################
 
 
-print("Testing PrintOutput ...")
-PrintOutput("This is a test string")
-
-print("\nTesting LoadFile ...")
-print("OUTPUT", LoadFile("test.txt"))
-
-print("\nTesting UpdateString ...")
-UpdateString("Hello World", "a", 3)
-
-print("\nTesting FindWordCount ...")
-a = ["Alice"]*5
-print(*a)
-PrintOutput(str(FindWordCount(a, "Alice")))
-
-print("\nTesting ScoreFinder ...")
-players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
-scores = [5, 8, 10, 6, 10, 4]
-ScoreFinder(players, scores, "jill")
-ScoreFinder(players, scores, "Manuel")
-
-print("\nTesting Union ...")
-players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
-print("OUTPUT", Union(scores, players2))
-
-print("\nTesting Intersection ...")
-print("OUTPUT", Intersection(players, players2))
-
-print("\nTesting NotIn ...")
-print("OUTPUT", NotIn(players2, players))
+##print("Testing PrintOutput ...")
+##PrintOutput("This is a test string")
+##
+##print("\nTesting LoadFile ...")
+##print("OUTPUT", LoadFile("test.txt"))
+##
+##print("\nTesting UpdateString ...")
+##UpdateString("Hello World", "a", 3)
+##
+##print("\nTesting FindWordCount ...")
+##a = ["Alice"]*5
+##print(*a)
+##PrintOutput(str(FindWordCount(a, "Alice")))
+##
+##print("\nTesting ScoreFinder ...")
+##players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+##scores = [5, 8, 10, 6, 10, 4]
+##ScoreFinder(players, scores, "jill")
+##ScoreFinder(players, scores, "Manuel")
+##
+##print("\nTesting Union ...")
+##players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+##print("OUTPUT", Union(scores, players2))
+##
+##print("\nTesting Intersection ...")
+##print("OUTPUT", Intersection(players, players2))
+##
+##print("\nTesting NotIn ...")
+##print("OUTPUT", NotIn(players2, players))
 
 
 
