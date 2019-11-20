@@ -62,9 +62,18 @@ def ScoreFinder(players, scores, name):
 ########   Function 6 : Union          #########
 ################################################
 
+
 def Union(input_list, input_list2):
     # Return union of input lists
     return list({x for x in input_list + input_list2})
+
+################################################
+########   Function 7 : Intersection   #########
+################################################
+
+def Intersection(input_list, input_list2):
+    return [x for x in input_list if x in input_list2]
+    
     
 
 ################################################
@@ -95,6 +104,9 @@ ScoreFinder(players, scores, "Manuel")
 print("\nTesting Union ...")
 players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
 print("OUTPUT", Union(scores, players2))
+
+print("\nTesting Intersection ...")
+print("OUTPUT", Intersection(players, players2))
 
 
 
