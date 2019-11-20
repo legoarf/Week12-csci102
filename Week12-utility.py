@@ -72,8 +72,17 @@ def Union(input_list, input_list2):
 ################################################
 
 def Intersection(input_list, input_list2):
+    # Return list of items in both input list
     return [x for x in input_list if x in input_list2]
+
+################################################
+########   Function 7 : Intersection   #########
+################################################
     
+
+def NotIn(input_list, input_list2):
+    # Return list of items in both in first list but not the second
+    return [x for x in input_list if x not in input_list2]
     
 
 ################################################
@@ -107,6 +116,9 @@ print("OUTPUT", Union(scores, players2))
 
 print("\nTesting Intersection ...")
 print("OUTPUT", Intersection(players, players2))
+
+print("\nTesting NotIn ...")
+print("OUTPUT", NotIn(players2, players))
 
 
 
