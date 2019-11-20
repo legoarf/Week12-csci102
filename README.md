@@ -1,2 +1,4 @@
-# Week12-csci102
-Homework submission for week 12
+# Author: Alexander Fryer
+# Date: 11/20/19
+# Week12-utility
+# Course: CSCI102 - Section B
