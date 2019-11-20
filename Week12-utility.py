@@ -41,6 +41,24 @@ def FindWordCount(input_list, input_str):
     return len([x for x in input_list if x == input_str])
 
 ################################################
+########   Function 5 : ScoreFinder  #########
+################################################
+
+    
+def ScoreFinder(players, scores, name):
+    # Make names uniform
+    players_lower = [x.lower() for x in players]
+
+    # Find index of name if exits
+    try:
+        index = players_lower.index(name.lower())
+        # Print Output
+        PrintOutput("{} got a score of {}".format(players[index],scores[index]))
+    except:
+        # Print not found if name does not exist
+        PrintOutput("player not found")
+
+################################################
 ############     Function Tests    #############
 ################################################
 
@@ -59,7 +77,11 @@ a = ["Alice"]*5
 print(*a)
 PrintOutput(str(FindWordCount(a, "Alice")))
 
-
+print("\nTesting ScoreFinder ...")
+players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+scores = [5, 8, 10, 6, 10, 4]
+ScoreFinder(players, scores, "jill")
+ScoreFinder(players, scores, "Manuel")
 
 
 
